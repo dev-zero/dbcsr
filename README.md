@@ -89,6 +89,19 @@ detect the compiler behind the compiler wrappers:
 
     -DCMAKE_SYSTEM_NAME=CrayLinuxEnvironment
 
+## API documentation
+
+To build the API documentation you need [FORD](https://github.com/Fortran-FOSS-Programmers/ford).
+
+Afterwards use the `doc` target for the CMake generated Makefile:
+
+    mkdir build
+    cd build
+    cmake ..  # will look for the `ford` binary
+    make doc
+
+The documentation (HTML format) will be located in `doc/`.
+
 ## Contributing to DBCSR
 
 Your contribution to the project is welcome! 
