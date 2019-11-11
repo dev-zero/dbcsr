@@ -70,10 +70,6 @@ MODULE dbcsr_hipblas
 
 CONTAINS
 
-! **************************************************************************************************
-!> \brief ...
-!> \param hipblas_handle ...
-! **************************************************************************************************
    SUBROUTINE hipblas_handle_init(hipblas_handle)
       TYPE(hipblas_handle_type), INTENT(OUT) :: hipblas_handle
 
@@ -94,10 +90,6 @@ CONTAINS
 #endif
    END SUBROUTINE
 
-! **************************************************************************************************
-!> \brief ...
-!> \param hipblas_handle ...
-! **************************************************************************************************
    SUBROUTINE hipblas_handle_destroy(hipblas_handle)
       TYPE(hipblas_handle_type), INTENT(INOUT) :: hipblas_handle
 
